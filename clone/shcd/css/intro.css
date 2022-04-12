@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+a{text-decoration: none;}
+li{list-style: none;}
+input{border:0; outline:0;}
+body{line-height: 1; font-size:14px; font-family: 'Noto Sans KR', sans-serif; }
+
+.intro_hg{background:url("../images/intro_bg.jpg") no-repeat fixed; background-size:cover;}
+.intro_block{position:fixed; left:0; top:0; right:0; bottom:0; background-color:rgba(0,0,0,0.5);}
+
+/*************************헤더영역 시작****************************/
+.intro_header{position:fixed; left:0; right:0; top:0;  background-color:rgba(0,0,0,0.6);}
+.intro_header_wrap{width:1100px; margin:0 auto; height:100px; position:relative;}
+.intro_header_wrap h1{position:absolute; left:0; top:25px;}
+.intro_lnb{position:absolute; right:0; top:40px; overflow:hidden;}
+.intro_lnb li{float:left;}
+.intro_lnb a{display:block; color:#fff; padding:0 30px; font-size:16px;}
+.intro_lnb a:hover{color:#d9b536;}
+.intro_lnb li:last-child a{padding-right:0;}
+
+.intro_box{position:absolute; left:calc(50% - 430px); top:calc(50% - 140px); text-align:center; color:#fff; height:380px; width:860px;}
+.intro_box h2{font-size:76px; line-height:0.9; font-weight: 300;}
+.intro_box b{display:block; font-weight: 700;}
+.intro_box p{font-size:19px; letter-spacing: -1px; padding:40px 0 66px 0; line-height:1.4;}
+.intro_box a{display:block; width:335px; height:70px; border-radius:35px; background-color:#5c6289; color:#fff; font-size:27px; line-height:70px; margin:0 auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

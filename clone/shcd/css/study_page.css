@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+a{text-decoration: none;}
+li{list-style: none;}
+input{border:0; outline:0;}
+body{line-height: 1; font-size:14px; font-family: 'Noto Sans KR', sans-serif; }
+
+/******************공통사항*************************/
+.bg_red{background-color:#ff899d;}
+.bg_sky{background-color:#8bdfee;}
+.bg_purple{background-color:#a7a3f6;}
+.bg_yellow{background-color:#ffd83f;}
+.bg_blue{background-color:#78b0ec;}
+.bg_pink{background-color:#ff7979;}
+
+
+
+/*******************************헤더***********************************/
+
+.main_header{position:relative; height:89px; background-color:#fff;}
+.main_header h1, .header_right{position:absolute;}
+.main_header h1{left:50px; top:25px; width:300px;}
+.header_academy_name{font-size:14px; color:#666; position:absolute; left:60px; top:30px; font-weight: 400;}
+
+.header_right{right:50px; top:40px; overflow:hidden;}
+.header_visit{float:left; color:#333; padding-right:25px;}
+.header_visit img{vertical-align: -3px;}
+.header_visit b{font-size:15px;}
+.gnb{overflow: hidden; float:left; }
+.gnb li{float:left; padding-right:15px;}
+.gnb li:last-child{padding-right:0;}
+.gnb img{vertical-align: -5px;}
+.gnb img:first-child{padding-right:8px;}
+.gnb a{color:#666; display:block;}
+.gnb a:hover{text-decoration: underline;}
+.gnb b{color:#ff695f;}
+
+
+
+/***********************************학습 화면 1페이지****************************/
+
+.main_bg{background:url("../images/main_bg_mom.jpg") no-repeat fixed; background-size:cover;}
+
+.main_wrap{width:1100px; position:absolute; left:calc(50% - 550px); top:calc(50% - 375px);}
+.main_area{height:750px; background-color:#f6f6f6; border-radius:20px; overflow:hidden;}
+.main_copyright{color:#fff; padding-top:14px; text-align: right; font-weight: 200;}
+
+.sub_wrap{padding:40px 40px 0 40px; overflow: hidden;}
+
+.sub_navi{float:left; width:171px; height:581px; border-radius: 20px; padding:49px 25px 0 30px; }
+
+.sub_navi a{display:block; position:relative; font-size:15px; height:30px; color:#fff; font-size:15px; }
+.sub_navi a:hover{font-weight: 700;} 
+.sub_navi .active{font-weight: 700;} 
+.sub_navi span{color:#fee65e; position: absolute; right:0; top:4px;}
+.sub_area{float:right; width:830px;}
+
+.study_table{width:100%; height:127px;  border-radius:10px; padding:0 10px;}
+.study_img{width;163px; height:107px; border-radius:10px; background-repeat: no-repeat; background-position:center; background-size:cover; }
+.study_btn{display:block; width:86px; height:40px; line-height:40px; color:#fff; font-size:15px; text-align:center; border-radius:10px; margin:2px 0;}
+.study_btn.before{background-color:#ff7979; }
+.study_btn.complete{background-color:#7a80b9;}
+.study_btn.report{background-color:#78b0ec;}
+
+.study_table th{padding-left:25px; text-align:left;}
+.study_table h3 {overflow: hidden; padding-bottom:10px; color:#333; font-size:20px;}
+.study_table h3 *{float:left;}
+.study_caption{white-space: nowrap; text-overflow: ellipsis; overflow: hidden; max-width: 200px; height:22px; padding-right:10px;}
+.study_label{width:62px; height:23px; border-radius:5px; font-size:13px; color:#fff; font-weight: 300; text-align: center; line-height: 23px;}
+.study_info span{color:#333; font-size: 15px; font-weight: 400; margin-right:20px;} 
+
+.sub_list li{margin-bottom:10px;}
+
+.paging{text-align:center; padding-top:11px;}
+.paging li{display:inline-block;width:32px; height:32px; border-radius:10px; background-color:#fff; color:#666; line-height:32px;}
+.paging a{color:#666; display:block;}
+.paging a:hover{font-weight: 600; color:#333;}
+.paging .active{font-weight: 600; color:#333;}
+
+
+/*********************학습화면 2페이지************************************/
+
+.sub_navi.mail{padding:49px 25px 0 18px; }
+.sub_navi img{margin-right:5px; vertical-align:-7px;}
+
+.mail_list div{float:left; }
+.mail_list li{overflow: hidden; height:47px; background-color:#fff; border-radius:10px; margin-bottom:10px; line-height:47px; text-align: center; color:#666;}
+.mail_list .active{font-weight: 700; color:#333;}
+.mail_list .active a{font-weight: 700; color:#333;}
+.mail_list_icon{vertical-align: -4px; padding-left:30px;}
+.mail_list a{color:#666;}
+.mail_list a:hover{text-decoration: underline;}
+
+.mail_list_title{color:#999;}
+.mail_list_title h4{font-size:15px; font-weight: 400; float:left;}
+.mail_list_title h4:nth-child(1), .mail_list div:nth-child(1){width:5%;}
+.mail_list_title h4:nth-child(2), .mail_list div:nth-child(2){width:15%;}
+.mail_list_title h4:nth-child(3), .mail_list div:nth-child(3){width:40%;}
+.mail_list_title h4:nth-child(4), .mail_list div:nth-child(4){width:20%;}
+.mail_list_title h4:nth-child(5), .mail_list div:nth-child(5){width:20%;}
+
+.mail_list_caption{text-align:left; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+.mail_reply_status{display:block; margin:5px auto 0 auto; width:116px; height:37px; line-height:37px; color:#fff; font-size:15px; text-align:center; border-radius:4px;}
+.mail_reply_status.before{background-color:#ff7979; }
+.mail_reply_status.complete{background-color:#7a80b9;}
+
+
+
+
+
+
+
+
+
+
+
+

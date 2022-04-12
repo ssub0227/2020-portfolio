@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* show .css - 상세페이지 페이지 css */
+
+/* 파일 merging(합치기) */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+/****************************************************************/
+
+
+/*************** 상단 경로 *******************/
+.gls_location {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4vmin;
+    font-weight: 500;
+}
+
+.gls_location li {
+    padding: 1.7vmin;
+}
+
+.gls_location li:hover a {
+    color: #6f8b9a;
+}
+
+/************************** 컨텐츠 영역 *********************************/
+#show_cont_wrap {
+    margin: 20vmin auto;
+}
+
+.show_cont {
+    display: flex;
+    padding-top: 2vmin;
+}
+
+.show_cont section {
+    width: 50%;
+}
+
+
+/*********************** 왼쪽 *****************************/
+
+.show_list li {
+    width: 100%;
+    margin-bottom: 8vmin;
+}
+
+.show_list img {
+    width: 90%;
+    display: block;
+}
+
+/************************ 오른쪽 ***********************/
+#show_right {
+    position: fixed;
+    right: 0;
+    padding: 13vmin 10vmin;
+}
+
+#show_right h3 {
+    position: relative;
+    font-size: 4vmin;
+    line-height: 1;
+}
+
+#show_right p {
+    font-size: 2.5vmin;
+    margin: 3vmin 0;
+}
+
+.heart {
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+.heart img {
+    position: absolute;
+    width: 20px;
+}
+
+.heart img:last-child {
+    opacity: 0;
+    transition: all .4s;
+}
+
+.heart.on img:last-child {
+    opacity: 1;
+}
+
+.heart.on img:first-child {
+    opacity: 0;
+}
+
+button {
+    width: 100%;
+    height: 6vmin;
+    border: 0;
+    background: rgba(111, 139, 154, 0.4);
+    color: #fff;
+    transition: all .2s ease-out;
+}
+
+button:hover {
+    background: rgba(111, 139, 154, 0.6);
+}
+
+.show_info {
+    margin-top: 3vmin;
+}
+
+.show_info li {
+    width: 100%;
+    height: 6vmin;
+    line-height: 6vmin;
+    border-bottom: 1px solid rgba(111, 139, 154, 0.2);
+}
+
+.show_info a {
+    display: block;
+    transition: all .2s ease-out;
+}
+
+.show_info a:hover {
+    color: #7aadc6;
+}
+
+.show_info a::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.show_info span {
+    float: right;
+    margin-right: 3vmin;
+    font-size: 3vmin;
+    transition: all .2s ease-out;
+}
+
+.show_info a:hover span {
+    transform: rotate(45deg);
+}
+
+.show_info div {
+    font-size: 1.5vmin;
+    line-height: 1.7;
+    margin-bottom: 2vmin;
+}
+
+.show_info li.on > a {
+    color: #7aadc6;
+}
+
+.show_info li.on span {
+    transform: rotate(45deg);
+}
+
+/************************ 관련제품 리스트 ************/
+#show_prd_list {
+    padding-top: 10vmin;
+}
+
+#show_prd_list h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3vmin;
+    padding: 2vmin 0 5vmin 0;
+}
+
+.prd_list {
+    width: 100%;
+}
+
+.prd_list li {
+    position: relative;
+    width: 23.5%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.prd_list h5,
+.prd_list h6 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    transition: all 0.3s;
+}
+
+.htxt:hover h5,
+.htxt:hover h6 {
+    color: #fff;
+}
+
+.prd_list h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.7vmin;
+    bottom: 3.5vmin;
+}
+
+.prd_list h6 {
+    font-size: 1.3vmin;
+    font-weight: 400;
+    bottom: 1vmin;
+}
+
+.prd_list img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.prd_list img:hover {
+    opacity: 0;
+}
+
+.prd_list a {
+    display: block;
+}
+
+.prd_list li:nth-child(1) {
+    background: url(../images/06.jpg) no-repeat 0/cover;
+}
+
+.prd_list li:nth-child(2) {
+    background: url(../images/09.jpg) no-repeat 0/cover;
+}
+
+.prd_list li:nth-child(3) {
+    background: url(../images/02.jpg) no-repeat 0/cover;
+}
+
+.prd_list li:nth-child(4) {
+    margin-right: 0;
+    background: url(../images/10.jpg) no-repeat 0/cover;
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+/************************* 미디어쿼리 ******************/
+@media only screen and (max-width:1024px) {
+    #show_right {
+        padding: 10vmin 8vmin;
+    }
+
+    #show_right h3 {
+        font-size: 3vmin;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .show_cont {
+        display: block;
+    }
+
+    .show_cont section {
+        width: 100%;
+    }
+
+    .show_list img {
+        width: 100%;
+    }
+
+    .show_list li {
+        float: "none";
+        display: "flex";
+        margin-bottom: 0;
+    }
+
+    #show_right {
+        position: static;
+        padding: 10vmin 0;
+    }
+
+    #show_right h3 {
+        font-size: 5vmin;
+    }
+
+    #show_right p {
+        font-size: 4vmin;
+    }
+
+    button,
+    .show_info li {
+        height: 10vmin;
+        line-height: 10vmin;
+        font-weight: 500;
+    }
+
+    #show_prd_list {
+        padding-top: 0;
+    }
+
+    .prd_list li:nth-child(3),
+    .prd_list li:nth-child(4) {
+        display: none;
+    }
+
+    .prd_list li {
+        width: 49%;
+        margin-right: 2%;
+    }
+        
+    .prd_list li:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .prd_list h5 {
+        font-size: 3vmin;
+    }
+
+    .prd_list h6 {
+        display: none;
+    }
+    
+    .swiper-wrapper{
+        height: auto;
+    }
+}

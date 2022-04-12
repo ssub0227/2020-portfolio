@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* 헤더 : font-family: 'Bebas Neue', cursive; */
+
+
+*{margin:0; padding:0; box-sizing: border-box;}
+a{text-decoration: none;}
+li{list-style: none;}
+input, select, textarea{border:0; outline:0; font-family: 'Merriweather', serif;}
+body{line-height: 1; font-size:14px; font-family: 'Merriweather', serif;  padding-top:50px;}
+
+/*************************헤더영역 시작*************************/
+header{position: fixed; top:0; left:0; right:0; height:50px; background-color:rgba(255,255,255,0.7); z-index: 1000;}
+header h1, .header_mobile{line-height:50px;}
+header a{color:#3f51b5;}
+.header_wrap{position: relative; height:50px; max-width:1200px; margin:0 auto; font-family: 'Bebas Neue', cursive;}
+.header_logo, .header_mobile, .lnb{position: absolute;}
+.header_logo{left:15px; top:0; font-size:28px;}
+.header_mobile{right:15px; top:0; font-size:24px;}
+/* top:0; 주는 이유는 line-height 줘서 */
+
+.lnb{top:50px; width:100%; background-color:#3f51b5; display:none;}
+.lnb li{height:40px; line-height:39px; border-bottom:1px solid #224d9a;}
+.lnb a{display:block; color:#fff; padding-left:15px;}
+
+
+@media all and (min-width:1280px){
+    header{height:80px; }
+    .header_logo{line-height:80px; left:0px; font-size:32px; }
+    .header_mobile{display:none;}
+
+    .lnb{top:0; right:0; background:none; overflow: hidden; display:block; width:350px;}/* top:0; 주는 이유는 line-height 줘서 */
+    .lnb li{height:80px; line-height:80px; border:none; float:left; }
+    .lnb a{color:#3f51b5; padding:0 15px; font-size:17px;}
+
+}
+
+/***********************메인 비주얼 영역 시작************************/
+.main_visual_wrap img{width:100%; display:block;}
+
+@media all and (min-width:1280px){
+    body{padding-top:80px;}
+}
+
+/******************** 메인 공통사항 ******************************/
+.main_title{color:#3f51b5; font-size:40px; text-align: center; padding-bottom:30px; font-family: 'Bebas Neue', cursive;}
+
+/*********************** 메인 WE ARE **********************************/
+.main_we_wrap{padding:0 5%;}
+.main_we_area{padding:40px 0; border-bottom:1px solid #ccc; max-width:1200px; margin:0 auto;}
+.main_we_text{text-align: center; line-height: 1.8; color:#616161;}
+.main_we_bottom{padding-top:30px; text-align: center;}
+.main_we_bottom h4{color:#3f51b5; font-family: 'Bebas Neue', cursive; font-size:18px; padding:15px 0;}
+.main_we_bottom p{color:#616161; line-height:1.8;}
+.main_we_bottom li{margin-bottom:40px;}
+.main_we_bottom li:last-child{margin-bottom:0;}
+
+@media all and (min-width:640px){
+    .main_we_bottom{overflow: hidden;}
+    .main_we_bottom li{float:left; width:49%; margin-right:2%;}
+    .main_we_bottom li:nth-child(2n){margin-right:0;}
+    .main_we_text{padding-bottom:30px;}
+}
+
+@media all and (min-width:768px){
+    
+}
+
+@media all and (min-width:1024px){
+    .main_we_top{overflow: hidden;}
+    .main_title, .main_we_text{float: left; text-align: left;}
+    .main_title{padding-top:7px; width:calc(100% - 600px);}
+    .main_we_text{padding-left:20px; padding-bottom:0; border-left:2px solid #e0e0e0;}
+    .main_we_bottom li{width:25%; margin:0; padding:0 5px;}
+    .main_we_bottom p{font-size:11px;}
+    /** width:23%; margin-right:2%; }
+    .main_we_bottom li:nth-child(2n){margin-right:2%;}
+    .main_we_bottom li:last-child{margin-right:0;} **/
+}
+
+@media all and (min-width:1280px){
+    .main_title{width:calc(100% - 750px);}
+    .main_we_area{padding:90px 0;}
+    .main_we_bottom p{font-size:14px;}
+}
+
+/***************************work 영역*****************************/
+.main_work_wrap{padding:30px 0; text-align: }
+.main_work_area .main_title{float:none;}
+.main_work_area{padding:0 5%; max-width: 1200px;}
+
+.main_work_list li{width:100%;}
+.main_work_list img{width:100%; display:block;}
+.main_work_list a{display:block; color:#fff; line-height: 1.4; position: relative; overflow: hidden;}
+.main_work_list a:before{content:''; background-color:rgba(0,0,0,0); position:absolute; left:0; right:0; top:0; bottom:0; transition:0.3s;}
+.main_work_list a:hover:before{background-color:rgba(63,81,181,0.7);}
+.main_work_list h4{font-size:25px; position:absolute; top:-100px; left:40px; transition:0.3s;}
+.main_work_list a:hover h4{top:50px;}
+.main_work_list small{display:block; font-size:16px; font-weight: 400;}
+
+
+
+@media all and (min-width:480px){
+    .main_work_list{overflow: hidden;}
+    .main_work_list li{float:left; width:50%;}
+}
+
+@media all and (min-width:640px){
+    .main_work_list li{width:33.33%;}
+}
+
+@media all and (min-width:768px){
+    .main_work_list li{width:25%;}
+}
+
+@media all and (min-width:1280px){
+    .main_work_wrap{padding:90px 0;}
+    .main_work_area {width:1200px; margin:0 auto; padding:0;}
+}
+
+/**************** 구분선 ***************************/
+.main_divider{width:20px; height:2px; background-color:#3f51b5; margin:0 auto;}
+
+/*********************블로그 영역 시작*****************************/
+.main_blog_area{padding:30px 5%; max-width:1200px; margin:0 auto;}
+.main_blog_list{text-align: center;}
+.main_blog_list li{margin-bottom:40px;}
+.main_blog_list li:last-child{margin:0;}
+.main_blog_list img{display:block; width:100%; max-width:268px; margin:0 auto;}
+.main_blog_list small{display:block; padding:15px 0 5px 0; color:#a4a4a4;}
+.main_blog_list p{max-width:268px; margin:0 auto; line-height:1.5; color:#424242;}
+
+
+@media all and (min-width:768px){
+    .main_blog_list{overflow: hidden;}
+    .main_blog_list li{float:left; width:32%; margin-right:2%; margin-bottom:0}
+}
+
+@media all and (min-width:1024px){
+    .main_blog_area .main_title{width:calc(100% - 750px);}
+}
+
+@media all and (min-width:1280px){
+    .main_blog_area{padding:90px 0;}
+    .main_blog_area .main_title{width:calc(100% - 845px);}
+    .main_blog_list{text-align: left;}
+}
+
+/************************contact 영역*****************************/
+.main_contact_area{max-width:1200px; margin:0 auto;}
+.main_contact_box{padding:30px 5%;}
+.main_contact_box input{width:100%; border-bottom:1px solid #757575; height:30px; margin-bottom:20px;}
+.main_contact_box textarea{width:100%; border-bottom:1px solid #757575; height:130px; margin-bottom:20px;}
+.main_contact_iframe{display:block; width:100%; height:350px; margin-top:30px; border:0;}
+.main_contact_btn{display:block; width:130px; height:40px; line-height:42px; background-color:#3f51b5; color:#fff; text-align: center; font-family: 'Bebas Neue', cursive; letter-spacing: 1px; font-size:16px; margin:0 0 0 auto;}
+
+
+@media all and (min-width:1024px){
+    .main_contact_box{overflow: hidden;}
+    .main_contact_form{width:750px;}
+    .main_contact_box .main_title{width:calc(100% - 750px);}
+    .main_contact_form{float:right; overflow: hidden;}
+    .main_contact_left{float:left; width:48%;}
+    .main_contact_right{float:right; width:48%}
+}
+
+@media all and (min-width:1280px){
+    .main_contact_box{padding:0;}
+    .main_contact_form{width:845px;}
+    .main_contact_box .main_title{width:calc(100% - 845px);}
+    .main_contact_iframe{height:450px;}
+}
+
+/****************푸터영역 시작***********************/
+footer{text-align: center; font-family: 'Bebas Neue', cursive; color:#3f51b5; padding:30px 0; font-size:20px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,631 @@
+@charset "UTF-8";
+/* 인트로 메인 페이지 css */
+
+/* 파일 merging(합치기) */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+/* 색 */
+.D95A2B {
+    color: #D95A2B;
+}
+
+.D93A2B {
+    color: #D93A2B;
+}
+
+/*********************** 공통 ******************/
+.area {
+    background-color: #F8F8F8;
+    padding: 0 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #F8F8F8;
+}
+
+#main h2 {
+    font-size: 20vmin;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/************************ cont1*********************/
+.area section {
+    padding-top: 17vmin;
+}
+
+.cont_title {
+    padding-top: 1%;
+    font-size: 8vmin;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+#cont1 p {
+    width: 40%;
+    margin: 5vmin 0;
+    font-size: 2.5vmin;
+    line-height: 1.5;
+    position: relative;
+    opacity: 0;
+    bottom: -20px;
+    transition: all 1s;
+}
+
+#cont1 p.on {
+    opacity: 1;
+    bottom: 0;
+}
+
+/******* 이력서 다운로드 버튼 *****/
+.dwld_btn {
+    display: block;
+    outline: 1px solid #3D8087;
+    width: 20vmin;
+    height: 6vmin;
+    line-height: 6vmin;
+    text-align: center;
+    transition: all .3s ease-out;
+    margin-bottom: 5%;
+    font-size: 2vmin;
+}
+
+.dwld_btn:hover {
+    background: #3D8087;
+    color: #fff;
+}
+
+/************** 스킬박스 **************/
+.skill_box {
+    position: absolute;
+    width: 50%;
+    top: 40vmin;
+    right: -50%;
+    background: #222;
+    padding: 10vmin;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 2s;
+}
+
+.skill_box.on {
+    right: 0;
+}
+
+.skill_box div {
+    margin-bottom: 5%;
+}
+
+.skill_box div:last-child {
+    margin-bottom: 0%;
+}
+
+.skill_box h4,
+.skill_box h4 a {
+    color: #fff;
+    font-size: 2.5vmin;
+    padding-bottom: 3%;
+}
+
+.skill_box li {
+    font-size: 2vmin;
+    width: 100%;
+    color: #bbb;
+/*    height: 4vmin;*/
+    line-height: 23px;
+}
+
+.skill_box a {
+    color: #bbb;
+}
+
+.about,
+.charater {
+    width: 50%;
+}
+
+.skill,
+.certificate {
+    width: 100%;
+}
+
+/*************** 성격************/
+.charater li {
+    width: 33.33%;
+}
+
+/******** 자격증..************/
+.certificate h4 img {
+    transition: all 1s;
+}
+
+.certificate.on img,
+.certificate h4:hover img {
+    transform: rotate(135deg);
+}
+
+.certificate span {
+    margin-right: 10%;
+}
+
+.certificate li:nth-child(n+6) {
+    display: none;
+}
+
+/******** 스킬 ************/
+.skill span {
+    display: block;
+    width: 100%;
+    height: 1vmin;
+    position: relative;
+    transition: all .4s;
+    border: 1px solid #bbb;
+    margin: 2% 0;
+}
+
+.skill span::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    background: #bbb;
+}
+
+.skill li:nth-child(1) span::before {
+    width: 90%;
+}
+
+.skill li:nth-child(2) span::before {
+    width: 75%;
+}
+
+.skill li:nth-child(3) span::before {
+    width: 85%;
+}
+
+.skill li:nth-child(4) span::before {
+    width: 10%;
+}
+
+.skill li:nth-child(5) span::before {
+    width: 65%;
+}
+
+.skill li:nth-child(6) span::before {
+    width: 85%;
+}
+
+
+/*********************** cont2******************/
+#cont2 h3 {
+    font-family: 'Secular One', sans-serif;
+}
+
+.prjt {
+    position: relative;
+    margin-top: 7vmin;
+}
+
+.prjt h4 {
+    opacity: 0;
+    font-size: 4vmin;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #848484;
+    font-family: 'Secular One', 'Noto Sans KR';
+    position: relative;
+    bottom: -20px;
+    transition: all 1s;
+}
+
+.prjt h4.on {
+    opacity: 1;
+    bottom: 0;
+}
+
+.link {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    margin: 10% auto;
+}
+
+.link_hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+    text-align: center;
+}
+
+.link_hover ul {
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.link_hover li {
+    float: none;
+    width: 100%;
+    height: 25%;
+    line-height: 400%;
+    transition: all .4s;
+}
+
+.link_hover a {
+    display: block;
+    color: #fff;
+    font-size: 2vmin;
+}
+
+.link_hover li:nth-child(1):hover {
+    background: rgba(61, 128, 135, 0.7);
+}
+
+.link_hover li:nth-child(2):hover {
+    background: rgba(217, 90, 43, 0.7);
+}
+
+.link_hover li:nth-child(3):hover {
+    background: rgba(242, 139, 48, 0.7);
+}
+
+.link_hover li:nth-child(4):hover {
+    background: rgba(217, 58, 43, 0.7);
+}
+
+.link:hover .link_hover {
+    height: 100%;
+}
+
+.link video {
+    width: 100%;
+}
+
+.circle {
+    transform: scale(.8);
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+
+.prj_list {
+    text-align: center;
+    width: 100%;
+    color: #777;
+    margin-bottom: 5%;
+    position: relative;
+    bottom: -20px;
+    opacity: 0;
+    transition: all 1s;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.prj_list.on {
+    bottom: 0;
+    opacity: 1;
+}
+
+.prj_list > li {
+    width: 30%;
+    margin-bottom: 3%;
+}
+
+.prj_list > li h5 {
+    font: 3vmin 'Secular One', sans-serif;
+    color: #333;
+    margin-bottom: 3%;
+}
+
+.prj_sub_list > li {
+    width: 100%;
+    line-height: 1.7;
+    font-size: 2vmin;
+}
+.prj_list.clone a{
+    display: block;
+}
+
+.prj_list.clone {
+    margin: 10% auto;
+}
+
+.prj_list.clone > li {
+    position: relative;
+    width: 32%;
+}
+
+.prj_list.clone li img {
+    width: 100%;
+    opacity: .8;
+}
+
+.clone_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    padding-top: 40%;
+}
+
+.clone_box li{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5vmin;
+}
+
+/************************************ cont3 *********/
+#cont3 {
+    position: relative;
+    padding-bottom: 17vmin;
+}
+
+#cont3 p {
+    font-size: 8vmin;
+    line-height: 1.2;
+}
+
+.text {
+    padding-top: 5%;
+    font-size: 2vmin;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.text a {
+    display: block;
+    color: #222;
+    transition: all .4s;
+}
+
+.text a:hover {
+    color: #3D8087;
+}
+
+.small_circle {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    animation: small_circle 1s ease-out infinite alternate;
+}
+
+@keyframes small_circle {
+    to {
+        bottom: 15%;
+    }
+}
+
+
+/************************* 플러그인 *************************/
+/* 4 different background colors */
+.c0 {
+    background: #3D8087;
+}
+
+.c1 {
+    background: #F2DDB6;
+}
+
+.c2 {
+    background: #F28B30;
+}
+
+.c3 {
+    background: #D95A2B;
+}
+
+.c4 {
+    background: #D93A2B;
+}
+
+/* 5 different sizes */
+.g0 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.g1 {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+}
+
+.g2 {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+}
+
+.g3 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.g4 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.parti {
+    display: block;
+    position: absolute;
+}
+
+/************************* 플러그인 *************************/
+
+/************ 미디어쿼리 **************/
+@media only screen and (max-width:1024px) {
+    #main h2 {
+        font-size: 14vmin;
+    }
+
+    .cont_title {
+        font-size: 6vmin;
+    }
+
+    #cont1 p {
+        width: auto;
+    }
+
+    .skill_box {
+        position: relative;
+        top: 0;
+        width: auto;
+        margin: 0 -10%;
+    }
+    
+    
+    #cont3 p {
+        font-size: 5vmin;
+    }
+
+    .circle {
+        transform: scale(.5);
+        top: 2%;
+        right: -5%;
+    }
+
+    .arrow {
+        width: 10%;
+    }
+
+    .small_circle {
+        transform: scale(.8);
+    }
+
+    .dwld_btn {
+        background: #3D8087;
+        color: #fff;
+    }
+
+    .link_hover {
+        margin-top: 5%;
+        height: 100%;
+        position: static;
+        background: none;
+    }
+
+    .link_hover ul {
+        width: 100%;
+        display: flex;
+    }
+
+    .link_hover li {
+        padding: 1%;
+        border-radius: 30px;
+        margin-right: 5%;
+        line-height: 100%;
+    }
+
+    .link_hover li:nth-child(1) {
+        background: rgba(61, 128, 135, 0.7);
+    }
+
+    .link_hover li:nth-child(2) {
+        background: rgba(217, 90, 43, 0.7);
+    }
+
+    .link_hover li:nth-child(3) {
+        background: rgba(242, 139, 48, 0.7);
+    }
+
+    .link_hover li:last-child {
+        background: rgba(217, 58, 43, 0.7);
+        margin-right: 0;
+    }
+
+}
+
+/* 미디어쿼리 1024 */
+
+@media only screen and (max-width:768px) {
+    #main h2 {
+        font-size: 13vmin;
+    }
+
+    .circle {
+        transform: scale(.3);
+        top: -8%;
+        right: -14%;
+    }
+
+    .prj_list > li {
+        width: 45%;
+        text-align: left;
+    }
+}
+
+/* 미디어쿼리 768 */
+
+@media only screen and (max-width:500px) {
+    .wrap {
+        top: 0;
+        height: 100%;
+        padding: 0;
+    }
+
+    .circle {
+        transform: scale(.2);
+        top: -22%;
+        right: -32%;
+    }
+
+    .small_circle {
+        transform: scale(.5);
+        right: 0;
+    }
+
+    .skill_box h4,
+    .skill_box h4 a {
+        font-size: 3.5vmin;
+    }
+
+    .skill_box li {
+        font-size: 2vmin;
+    }
+
+    .link {
+        width: 70%;
+    }
+
+    .prj_list > li {
+        width: 100%;
+    }
+
+    .prj_list.clone::after{
+        content: none;
+    }
+    
+    .prj_list.clone > li {
+        width: 48%;
+    }
+    
+}
+
+/* 미디어쿼리 500 */

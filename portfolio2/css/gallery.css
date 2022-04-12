@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* gallery .css - 갤러리 페이지 css */
+
+/* 파일 merging(합치기) */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+
+.gallery {
+    background: #eee;
+    overflow: hidden;
+}
+
+/******************* 중앙 텍스트 *******************/
+#text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 200;
+    font-size: 30vmin;
+    color: #333;
+    z-index: 1;
+    cursor: default;
+}
+
+/********************** 사진 *****************/
+#photo {
+    position: relative;
+    height: 100%;
+}
+
+
+#photo li {
+    position: absolute;
+}
+
+#photo img {
+    width: 40vmin;
+    transition: all 0.4s ease-out;
+}
+
+#photo img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/*********** 포지션 *****************************/
+.galimg1 {
+    top: 25vmin;
+    left: 20vmin;
+}
+
+.galimg2 {
+    transform: scale(0.6);
+    top: 5vmin;
+    left: 70vmin;
+    z-index: 2;
+}
+
+.galimg3 {
+    transform: scale(0.8);
+    top: 40vmin;
+    left: 110vmin;
+}
+
+.galimg4 {
+    top: 10vmin;
+    left: 140vmin;
+}
+
+.galimg5 {
+    z-index: 2;
+    transform: scale(1.1);
+    top: 30vmin;
+    left: 190vmin;
+}
+
+.galimg6 {
+    transform: scale(0.8);
+    top: 10vmin;
+    left: 240vmin;
+}
+
+.galimg7 {
+    transform: scale(0.6);
+    top: 45vmin;
+    left: 280vmin;
+}
+
+.galimg8 {
+    z-index: 2;
+    transform: scale(1.05);
+    top: 25vmin;
+    left: 310vmin;
+}
+
+.galimg9 {
+    transform: scale(0.65);
+    top: 60vmin;
+    left: 350vmin;
+}
+
+.galimg10 {
+    z-index: 2;
+    top: 10vmin;
+    left: 400vmin;
+}
+
+.galimg11 {
+    transform: scale(0.85);
+    top: 35vmin;
+    left: 455vmin;
+}
+
+.galimg12 {
+    z-index: 2;
+    transform: scale(1.3);
+    top: 20vmin;
+    left: 520vmin;
+}
+
+
+/****************** 미디어쿼리 ******************/
+@media only screen and (max-width:1024px) {
+    #photo {
+        top: 10vmin;
+    }
+}
+
+/* 미디어쿼리 1024 */
+
+
+@media only screen and (max-width:500px) {
+    #photo {
+        top: 0;
+    }
+
+    #text {
+        display: none;
+    }
+    
+    #photo{
+        padding-top: 20vmin;
+        width: 100%; 
+        height: auto;
+    }
+    
+    #photo li {
+        position: static;
+        transform: scale(1);
+        top: auto;
+        left: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10vmin;
+    }
+
+    #photo img:hover {
+        transform: scale(1);
+    }
+
+    #photo img {
+        width: 80vmin;
+    }
+}
+
+/* 미디어쿼리 500 */

@@ -1,0 +1,33 @@
+.sub_content_wrap{width:1000px; margin:0 auto; padding:32px 0 60px 0;}
+.product_img_wrap{padding:7px; border:1px solid #e8e8e8;}
+.product_img_area{ height:232px; background-repeat: no-repeat; position: relative;}
+.product_label{background: url("../images/label_orenge.png") no-repeat; width:69px; height:47px; color:#fff; text-align: center; line-height:47px; position: absolute; top:0; left:24px;}
+.product_person{width:114px; height:114px; border-radius: 50%; border:2px solid #fff; position: absolute; bottom:10px; right:10px;}
+
+.product_table{margin-top:3px; border:1px solid #e8e8e8;  width:100%; text-align:center;}
+.product_table tr{height:34px;}
+.product_table th{border-bottom:1px solid #e8e8e8; color:#513e38; font-size:15px;}
+.product_table td{border-bottom:1px solid #e8e8e8; font-size:11px; color:#888;}
+.product_table > tbody > tr:last-child > td{border:0; color:#513e38; font-size:11px;}
+.product_table td img{margin-right:7px; vertical-align:-1px;}
+
+.product_list{overflow: hidden;}
+.product_list li{ margin:0 2% 2% 0; float:left; width:32%;}
+.product_list li:nth-child(3n){margin-right:0;}
+
+/****************************************서브 컨텐츠*************************/
+.sub_title{padding-bottom:11px; position: relative; border-bottom:1px solid #3a3a3a; margin-bottom:10px;}
+.sub_title h2{position:relative; font-size:17px; padding-left:20px; line-height:17px;}
+.sub_title h2:before{content:''; position:absolute; left:3px; top:1px; background-color:#495164; border:1px solid #2d3444; width:6px; height:14px; border-radius: 4px;}
+
+.sub_title_right{overflow: hidden;overflow: hidden; position: absolute; right:0; bottom:10px; height:15px; line-height:15px;}
+.sub_title_right span{float:left; color:#888; margin-right:15px;}
+
+.sub_title_navi{overflow: hidden; float:left;}
+.sub_title_navi a{display:block; color:#888; padding:0 10px;}
+.sub_title_navi a:hover{color:#6b6b6b; font-weight: 700;}
+.sub_title_navi .active{color:#6b6b6b; font-weight: 700;}
+.sub_title_navi li{float:left; position: relative;}
+.sub_title_navi li:before{content:''; background-color:#a3a3a3; width:1px; height:15px; position: absolute; left:0; top:0;}
+.sub_title_navi li:last-child:after{content:''; background-color:#a3a3a3; width:1px; height:15px; position: absolute; right:0; top:0;}
+

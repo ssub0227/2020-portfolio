@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+a{text-decoration: none;}
+li{list-style: none;}
+body{line-height: 1; font-size:12px; font-family: 'Noto Sans KR', sans-serif; }
+
+/***************************헤더 영역********************************/
+header{border-top:3px solid #000;}
+.header_wrap{margin:0 auto; width:1000px; height:154px; position: relative;}
+
+.logo_social, .gnb, .header_search_wrap, .gnb li{position: absolute; }
+.header_wrap h1{text-align:center; padding-top:40px;}
+.logo_social{left:14px; top:64px;}
+
+.gnb{overflow: hidden; right:0; top:20px;}
+.gnb li{float:left; position: relative;}
+.gnb li:after{content:''; position:absolute; top:3px; bottom:3px; width:1px; background-color:#d3d3d3;}
+.gnb li:first-child:after{display: none;}
+.gnb a{color:#8c8c8c; display: block; padding:0 7px;}
+.gnb .gnb_event{color:#477d00;}
+/*부모를 통해서 상속받은 건 부모까지 써줘야 함!!!! gnb:a, gnb:li 등 위의 속성들을 동일하게 적용해야 하니까*/
+
+/**.header_search_wrap{right:0; bottom:41px; }
+.header_search_wrap input{background-color:#fefefe; border:2px solid #e8e8e8; height:31px; width:251px; padding-left:20px; position: relative;}
+.header_search_wrap img{position: absolute; right:7px; top:4px; bottom:7px;}
+
+>>>>>> 내가 한 방법인데 걍 주석처리 하겠음. absolute로 적용하면 검색창 입력할 때 글자수가 넘어가면 서치 이미지 밑으로 글자가 깔림!!! 위 방법으로 할 경우 input 한테 padding-right 적용해야 함**/
+
+.header_search_wrap{right:0; bottom:41px; width:251px: height:31px; border:2px solid #e8e8e8; overflow: hidden;}
+.header_search_wrap input{border:0; width:216px; height:27px; float:left; padding-left:15px;}
+.header_search_wrap a{float: left; display: block; width:31px; height:27px; padding-top:3px; text-align: center;}
+/* float:left; >>>> input은 inline-block, a는 inline 인데 인라인 블록은 옆에 간격이 생김... float 주면 간격 사라짐 그래서 그냥 float left 준 것*/
+
+nav{height:47px; line-height:47px; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6fa61d+0,7ab127+100 */
+background: #6fa61d; /* Old browsers */
+background: -moz-linear-gradient(top,  #6fa61d 0%, #7ab127 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #6fa61d 0%,#7ab127 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #6fa61d 0%,#7ab127 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fa61d', endColorstr='#7ab127',GradientType=0 ); /* IE6-9 */
+}
+
+.lnb{width:1000px; overflow: hodden; margin:0 auto;}
+.lnb li{width:25%; float:left; text-align:center; position: relative;}
+.lnb li:after{content:''; position: absolute; width:1px; right:0; top:0; bottom:50%; background-color:rgba(255,255,255,0.7);}
+.lnb li:first-child:before{content:''; position: absolute; width:1px; left:0; top:0; bottom:50%; background-color:rgba(255,255,255,0.7);}
+.lnb a{background:url("../images/nav_bg.png") no-repeat; color:#fff; font-size:20px; display:block; transition:0.4s; } 
+.lnb a:hover{background:url("../images/nav_bg_active.png") no-repeat; }
+
+
+
+
+/****************************************푸터 영역********************************/
+footer{border-top:1px solid ccc; border-bottom:3px solid #000;}
+
+/*푸터 좌측 상단*/
+.footer_top_wrap{background-color: #ededed;}
+.footer_top_area{height:44px; line-height: 44px; margin:0 auto; width:1000px; overflow: hidden;}
+.footer_top_navi{float: left; overflow: hidden;}
+.footer_top_navi li{float:left; position: relative;}
+.footer_top_navi li:after{content:''; position: absolute; width:1px; top:20px; bottom:18px; right:0; background-color:#c0c0c0;}
+.footer_top_navi li:last-child:after{display: none;}
+.footer_top_navi a{color:#202020; display: block; padding:0 17px; font-size:13px; transition:0.3s;}
+.footer_top_navi a:hover{color:#7cb329;}
+.footer_top_navi li:first-child a{padding-left:0;}
+
+/*푸터 우측 상단*/
+.footer_sns_wrap{float: right;}
+.footer_sns_1, .footer_sns_2{display:inline-block;}
+.footer_sns_1 li, .footer_sns_2 li{display:inline-block;}
+.footer_sns_wrap *{vertical-align:middle;}
+.footer_sns_wrap img{display:block;}
+.footer_sns_wrap h5{font-size:13px;}
+.footer_sns_2{padding-left:10px;}
+
+/*푸터 좌측 하단*/
+.footer_bottom_wrap{background-color:#fff; }
+.footer_bottom_area{margin:0 auto; width:1000px; overflow: hidden; padding:13px 0 20px 0;}
+
+.footer_safety_mark{float:right;}
+.footer_cs_center, .footer_address{float:left;}
+
+.footer_cs_center{width:200px;}
+.footer_address{line-height:1.5; padding:5px 0 5px 15px; border-left:1px solid #ccc;}
+.footer_address address{display:inline; font-style:normal;}
+.footer_copyright{padding-top:4px;}
+.footer_address .space{padding:0 5px;}
+
+.footer_cs_center{padding-top:5px; line-height: 1.3;}
+.footer_cs_center big{display:block; font-size:15px; color:#3a3a3a; padding-bottom:5px;}
+.footer_cs_center b{font-size:18px; padding-left:5px; color:#1d1d1d;}
+
+
+/*******************************페이징*******************************/
+.bbs_paging{padding-top:30px; text-align:center;}
+.bbs_paging li{display:inline-block;}
+.bbs_paging a, .bbs_paging span{display:block; width:32px; height:32px; border:1px solid #e9e9e9; text-align: center; line-height:30px; color:#8e959b;}
+.bbs_paging a:hover{background-color:#495164; color:#fff; border:1px solid #495164;}
+.bbs_paging .active{background-color:#495164; color:#fff; border:1px solid #495164;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

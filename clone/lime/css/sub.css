@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+*{margin:0; padding:0; box-sizing:border-box;}
+a{text-decoration:none;}
+li{list-style:none;}
+body{font-family: 'Nanum Gothic', sans-serif;}
+body, table{line-height:1; font-size:14px;}
+
+/****************************헤더영역******************************/
+.header_wrap{position: relative; width:940px; margin:0 auto; height:105px;}
+.header_wrap h1, .gnb, .lnb{position: absolute;}
+
+.header_wrap h1{top:22px;}
+.gnb{top:22px; right:0; overflow: hidden;}
+.gnb li{float:left;  position: relative;}
+.gnb li:after{content:""; position: absolute; right:0; top:1px; bottom:1px; width:1px; background-color:#dedad6;}
+.gnb li:last-child:after{display: none;}
+.gnb a{color:#6f6f6f; display:block; padding:0 10px; font-size:9px}
+.gnb a:hover{color:#82b0d6;}
+
+.lnb{bottom:34px; right:0; overflow: hidden;}
+.lnb li{float:left; position:relative;}
+.lnb li:after{content:""; position:absolute; right:0; top:1px; bottom:1px; width:1px; border-right:1px dashed #c5c5c5;}
+.lnb li:last-child:after {border:0;}
+.lnb a{color:#777; display:block; padding:0 15px; font-size:17px; font-weight: 600;}
+.lnb a:hover{color:#82b0d6;}
+
+/***************************************컨텐츠 영역********************/
+.sub_area{padding: 30px 0 77px 0; background:url("../images/bg_pattern.png") repeat-x bottom #bfebfa; }
+
+.sub_box{overflow: hidden; width:940px; margin:0 auto;}
+.left_navi{float: left; width: 170px; background-color:#fff; }
+.content_wrap{float: right; width: 760px;}
+
+/*****************좌측 영역 **********************/
+.left_title{height:93px; background: url("../images/bg_sub_title_1.png") no-repeat; border-bottom:1px solid #e2e2e2; padding:50px 0 0 16px;}
+.left_navi a{height:42px; line-height:42px; display:block; border-bottom:1px solid #e2e2e2; color:#797979; padding-left:15px; font-size:13px; letter-spacing: -0.5px; font-weight: 600;}
+.left_navi a:hover{background: url(../images/navi_arrow_white.png) no-repeat 153px 50% #82b0d6; color:#fff; border:none; box-shadow: inset 5px 5px 5px 0px rgba(48,102,187,0.3);}
+.left_navi .active{background: url(../images/navi_arrow_white.png) no-repeat 153px 50% #82b0d6; color:#fff; border:none; box-shadow: inset 5px 5px 5px 0px rgba(48,102,187,0.3);}
+.left_title small{text-transform: uppercase; font-size:10px; color:#aaa;}
+
+/*****************우측 영역 **********************/
+.sub_title{height:56px; margin-bottom:1px; background-color:#fff; position: relative; font-size:20px; font-weight: 500; padding:20px 0 0 22px;}
+.location{position: absolute; right:23px; bottom:13px; font-size:10px;}
+.location *{vertical-align: middle;}
+.location a{color:#b8b7b7;}
+.location a:hover{text-decoration: underline;}
+.location a:last-child{color:#8a8a8a;}
+
+.content_area{background-color:#fff; overflow: hidden; padding:36px 19px 80px 28px;}
+.sub_main_left{float:left;}
+.sub_main_right{float:right; width:275px; line-height: 1.6;}
+.sub_main_right h2{font-weight: 500; padding-top:30px;}
+.sub_main_right div{color:#969595; font-size:13px; font-weight: 300; padding-bottom:25px;}
+
+/************************************푸터 영역***************/
+footer{width:940px; margin:0 auto; height:90px; text-align:center; line-height: 90px; overflow: hidden; position: relative;}
+footer img{float: left; position: absolute; left:0; top:30px;}
+footer address{float: right; font-size:12px; color:#787878; font-style:normal;}
+footer p{display: inline-block; margin-left:10px;font-size:9px; color:#959593;}
+footer p b{text-transform: uppercase;}
+
+
+/************************************어사이드 영역***********************/
+
+
+.aside_bar{position: fixed; top:134px; left: 50%; margin-left:480px; background-color:#ff0;}
+.aside_bar img{display: block;}
+
+
+
+
+

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+*{margin:0; padding:0; box-sizing:border-box;}
+a{text-decoration:none;}
+li{list-style:none;}
+body{font-family: 'Nanum Gothic', sans-serif;}
+body, table{line-height:1; font-size:14px;}
+
+/**************************************퀵메뉴 시작***************************/
+
+.quick_menu{position:fixed; top:134px; left:50%; z-index:100; margin-left:485px;}
+.quick_menu li img{display:block;}
+
+/*********************************헤더 영역 시작*********************************/
+.header_wrap{text-align:right; padding:48px 25px 33px 0;}
+.header_wrap li{display:inline-block;}
+.header_wrap a{color:#5f5f5f; font-size:8px;}
+.header_wrap a:hover{color:#5f5f5f; font-size:8px; text-decoration:underline;}
+.header_wrap span{display:inline-block; width:1px; height:5px; background-color:#88abc9;}
+
+/**********************************메인 랩 시작*******************************/
+
+.main_wrap{background:url("../images/bg_pattern.png") repeat-x bottom #bfebfa;}
+
+.main_area{width:940px; height:817px; margin:0 auto; position:relative; background: url("../images/bg_gradient.png") no-repeat center top}
+.main_area > a{color:#fff; text-align:center;}
+.main_area > a > img{display:block; margin:0 auto;}
+.main_area h3{font-size:17px; text-align:center;}
+
+.main_book_intro, .main_community, .main_mall, .main_notice, .main_storytelling, .main_reference, .main_book_purchase, .main_rhyme_eng, .main_faq{position: absolute;}
+
+/*교재 소개*/
+.main_book_intro{width:232px; height:232px; background-color:rgba(250,142,104,0.7);border-radius:19px; padding-top:31px; bottom:56px; left:63px;}
+.main_book_intro:hover{background-color:rgba(250,142,104,1);}
+.main_book_intro h3{padding-top:14px;}
+
+/*커뮤니티*/
+.main_community{width:116px; height:116px; background-color:rgba(145,158,198,0.7); border-radius:9px; padding-top:16px; left:13px; top:79px;}
+.main_community:hover{background-color:rgba(145,158,198,1);}
+.main_community h3{padding-top:11px;}
+
+/*쇼핑몰*/
+.main_mall{width:134px; height:134px; background-color:rgba(205,146,243,0.7); border-radius:11px; padding-top:10px; left:155px; top:138px;}
+.main_mall:hover{background-color:rgba(205,146,243,1);}
+.main_mall h3{padding-top:4px;}
+
+/*공지사항*/
+.main_notice{width:166px; height:165px; background-color:rgba(255,205,90,0.7); border-radius:9px; left:123px; top:305px; padding-top:10px;  z-index:50;} 
+.main_notice:hover{background-color:rgba(255,205,90,1);}
+.main_notice h3{padding-top:4px;}
+
+/*스토리텔링 영어*/
+.main_storytelling{width:139px; height:139px; background-color:rgba(132,167,241,0.7); border-radius:8px; left:347px; bottom:115px; padding-top:13px;}
+.main_storytelling:hover{background-color:rgba(132,167,241,1);}
+.main_storytelling h3{padding-top:9px;}
+
+/*자료실*/
+.main_reference{width:197px; height:210px; background-color:rgba(158,199,102,0.7); border-radius:21px; right:206px; bottom:97px; padding-top:21px;  z-index:50;}
+.main_reference:hover{background-color:rgba(158,199,102,1);}
+.main_reference h3{padding-top:13px;}
+
+/*교재구입문의*/
+.main_book_purchase{width:151px; height:201px; background-color:rgba(98,203,182,0.7); border-radius:9px; right:2px; bottom:78px; padding-top:10px;}
+.main_book_purchase:hover{background-color:rgba(98,203,182,1);}
+.main_book_purchase h3{padding-top:13px;}
+.main_book_purchase h4{padding-top:13px;font-size:11px;}
+.main_book_purchase h5{font-size:9px;}
+
+/*라임 잉글리쉬*/
+.main_rhyme_eng{width:182px; height:181px; background-color:rgba(115,202,232,0.7); border-radius:13px; right:31px; bottom:339px; padding-top:27px;  z-index:50;}
+.main_rhyme_eng:hover{background-color:rgba(115,202,232,1);}
+.main_rhyme_eng h3{padding-top:10px;}
+
+/*faq*/
+.main_faq{width:181px; height:179px; background-color:rgba(246,119,129,0.7); border-radius:10px; right:26px; top:92px; padding-top:20px;}
+.main_faq:hover{background-color:rgba(246,119,129,1);}
+.main_faq h3{padding-top:15px;}
+
+/*********************************메인 이미지 로고 영역****************************/
+.main_text{position:absolute; width:338px; height:124px; top:90px; left:342px;}
+.main_logo_girl{padding-left:25px;}
+.main_text li, .main_logo_text{display:inline-block;}
+.text_1{color:#0094c6; font-size:14px; font-weight:bold;}
+.text_2{padding-left:14px; color:#888888; font-size:10px; line-height:1.5;}
+.main_text_area{padding-top:17px;}
+
+/*********************************메인 비주얼 영역****************************/
+.main_visual_1{position:absolute; top:214px; right:144px; z-index:10;}
+.main_visual_2{position:absolute; top:230px; left:251px; z-index:30;}
+
+/*************************************푸터 영역 시작***************************/
+.footer_wrap{text-align:center; padding-top:17px;}
+.footer_wrap li{display:inline-block; font-size:10px; color:#787878;}
+.footer_wrap li:last-child{font-size:8px; color:#959593;}
+.footer_wrap li img{vertical-align:middle; padding-right:8px;}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+a{text-decoration: none;}
+li{list-style: none;}
+body{line-height: 1; font-size:14px; font-family: 'Noto Sans KR', sans-serif; }
+
+
+/***********************헤더영역 시작*********************************/
+header{box-shadow:0 1px 3px 1px rgba(0,0,0,0.1);} 
+
+.gnb_wrap{background-color:#f2f2f2;}
+.gnb_area{height:34px; line-height:34px; width:1080px; margin:0 auto; position: relative;}
+.gnb{overflow: hidden; position: absolute; right:0;}
+.gnb li{float:left; position: relative;}
+.gnb li:after{content:''; width:1px; position: absolute; right:0; top:11px; bottom:11px; background-color:#c3bac3; }
+.gnb li:last-child:after{display:none;}
+.gnb a{display:block; padding:0 10px;color:#666; font-size:11px;}
+.gnb a:hover{color:#11b2e1;}
+.gnb li:last-child a{padding-right:0;}
+
+.lnb_wrap{width:1080px; margin:0 auto; height:75px; position:relative;}
+.lnb_wrap h1, .lnb, .navi_bar{position: absolute;}
+.lnb_wrap h1{left:0; top:17px;}
+
+.lnb{overflow: hidden; left:190px; top:30px;}
+.lnb li{float: left; }
+.lnb a{display:block; padding:0 30px; color:#333; font-size:16px;}
+.lnb a:hover{color:#11b2e1;}
+.lnb .active{color:#11b2e1;}
+
+.navi_bar{width:80px; height:75px; background-color:#11b2e1; display:block; text-align:center; padding-top:25px; right:0; top:0;}
+
+
+/***************************푸터 영역 시작***************************************/
+.footer_area{background-color:#282828;}
+.footer_top{width:1080px; margin:0 auto; height:45px; line-height:45px;}
+.footer_top{overflow: hidden;}
+.footer_top li{float:left; position: relative;}
+.footer_top li:after{content:''; position: absolute; right:0; top:16px; bottom:16px; width:1px; background-color:#777;}
+.footer_top li:last-child:after{display:none;}
+.footer_top a{color:#aaa; display:block; padding:0 15px; font-size:12px;}
+.footer_top li:first-child a{padding-left:0;}
+
+.footer_area_2{background-color:#363636;}
+.footer_bottom{width:1080px; margin:0 auto; height:70px; color:#999; padding-top:24px; font-size:11px; line-height:1.5; position: relative;}
+.footer_bottom a{color:#999;}
+.footer_bottom address{display:inline-block; font-style:normal;}
+.footer_copyright{display:block;}
+.bottom_sns{position: absolute; right:0; bottom:15px;}
+
+
+.space{display:inline-block; padding:0 5px;}

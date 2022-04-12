@@ -1,0 +1,495 @@
+@charset "utf-8";
+/* main.css - 메인페이지 css */
+
+/* 파일 merging(합치기) */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+
+/* ***********************메인 페이지 영상 **********************/
+/* 메인비주얼 100% */
+#main_page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* 배경깔기 */
+.main_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.21);
+}
+
+/*영상*/
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.main_text {
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    left: 20%;
+}
+
+.main_text > h2 {
+    font-size: 10vmin;
+}
+
+.main_text > p {
+    margin-top: 50px;
+    padding-left: 5px;
+    line-height: 1.5;
+}
+
+/************* 선글라스 컨텐츠영역 **************************/
+.title_wrap {
+    text-align: center;
+}
+
+#sun_cont_wrap {
+    padding: 10% 0;
+}
+
+.title_wrap {
+    position: relative;
+    left: 5%;
+    opacity: 0;
+    transition: all 1.5s ease-out;
+}
+
+.title_wrap.on {
+    left: 0%;
+    opacity: 1;
+}
+
+/* 제목 */
+.cont_tit {
+    font-size: 10vmin;
+    margin-bottom: 4%;
+}
+
+.cont_sub_tit {
+    font-size: 2vmin;
+    line-height: 1.4;
+}
+
+#sun_cont_wrap section {
+    padding-top: 7%;
+    display: flex;
+}
+
+.sun_cont2 {
+    margin-top: -10%;
+    flex-flow: row-reverse;
+}
+
+/* cont_img */
+.cont_img {
+    width: 40%;
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+}
+
+.cont_img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: all .5s;
+}
+
+.contimghover {
+    opacity: 0;
+}
+
+.sun_cont1.on .contimghover,
+.sun_cont2.on .contimghover {
+    opacity: 1;
+}
+
+.sun_cont1.on .contimg,
+.sun_cont2.on .contimg {
+    opacity: .7;
+}
+
+.sun_cont1.on a,
+.sun_cont2.on a {
+    color: #2e63ac;
+}
+
+.sun_cont1.on span,
+.sun_cont2.on span {
+    transform: rotate(360deg);
+}
+
+/* cont_txt */
+.cont_txt {
+    width: 60%;
+    padding-left: 11%;
+    padding-top: 15%;
+    text-align: left;
+}
+
+.cont_txt h3 {
+    font-size: 11vmin;
+    padding-bottom: 10%;
+}
+
+.cont_txt p {
+    font-size: 2vmin;
+    line-height: 1.2;
+}
+
+.cont_txt span {
+    display: inline-block;
+    transition: all .5s;
+}
+
+
+/****************************이벤트배너*********************/
+#ban {
+    position: relative;
+    height: 800px;
+    background: url(../images/bg1.jpg) no-repeat center/cover;
+}
+
+MARQUEE {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 150px;
+    font-weight: 900;
+    color: #fff;
+    height: 150px;
+    line-height: 150px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ban_btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-size: 2vmin;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.ban_btn:hover {
+    color: #333;
+    background: #fff;
+}
+
+/********************** 안경 콘텐츠************************/
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+#gls_cont_wrap {
+    padding: 10% 0;
+}
+
+.gls_cont {
+    position: relative;
+    padding: 5% 0;
+    overflow: hidden;
+}
+
+.gls_list li {
+    float: none;
+    height: 100%;
+}
+
+.gls_list img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.gls_list img:hover {
+    opacity: 0;
+}
+
+.gls_list a {
+    color: #fff;
+}
+
+.gls_list h5 {
+    position: relative;
+    font-size: 2vmin;
+    padding-left: 3%;
+    line-height: 1.4;
+    height: 40px;
+}
+
+.gls_list h5 span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.gls_list h6 {
+    font-size: 1.5vmin;
+    font-weight: 400;
+    padding: 0 0 2% 3%;
+}
+
+
+/************************ 오프라인 매장 ********************/
+.shop_btn {
+    display: block;
+    margin: 3% auto;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s;
+    border: 1px solid #000;
+}
+
+.shop_btn:hover {
+    color: #333;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.shop_img {
+    width: 100%;
+    height: 500px;
+}
+
+.shop_img li {
+    width: 33.33%;
+    height: 100%;
+}
+
+.shop_img li:nth-child(1) {
+    background: url(../images/shop1.jpg) no-repeat center/cover;
+}
+
+.shop_img li:nth-child(2) {
+    background: url(../images/shop2.jpg) no-repeat center/cover;
+}
+
+.shop_img li:nth-child(3) {
+    background: url(../images/shop3.jpg) no-repeat center/cover;
+}
+
+
+
+#flowTxt {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200%;
+    text-align: center;
+    font: bold 5vw Verdana;
+    color: #fff;
+    white-space: nowrap;
+    animation: flowTxt 20s linear infinite;
+}
+
+flow {
+    display: block;
+    flex: 1;
+}
+
+@keyframes flowTxt {
+    to {
+        left: -100%;
+    }
+}
+
+/********************** 미디어쿼리 ********************/
+@media only screen and (max-width:1024px) {
+    .main_text {
+        left: 10%;
+    }
+
+    .main_text > h2 {
+        font-size: 8vmin;
+    }
+
+    .cont_img {
+        height: 400px;
+    }
+
+    .cont_tit {
+        font-size: 8vmin;
+        margin-bottom: 7%;
+    }
+
+    .cont_sub_tit {
+        font-size: 1.5vmin;
+    }
+
+    .cont_txt h3 {
+        font-size: 6vmin;
+    }
+
+    .cont_txt p {
+        font-size: 1.5vmin;
+    }
+
+    #ban {
+        height: 500px;
+    }
+
+    .gls_list h5 {
+        height: 25px;
+    }
+}
+
+/* 미디어쿼리 1024 */
+
+@media only screen and (max-width:500px) {
+    .main_text {
+        top: 80%;
+        right: 5%;
+    }
+
+    .main_text p {
+        display: none;
+    }
+
+    .cont_sub_tit {
+        font-size: 3vmin;
+    }
+
+    #sun_cont_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30%;
+    }
+
+    #sun_cont_wrap section {
+        margin-top: 5%;
+        padding: 2%;
+        width: 50%;
+        display: block;
+    }
+
+    .sun_cont2 {
+        margin-top: 0;
+    }
+
+    .cont_img {
+        position: relative;
+    }
+
+    .cont_img img {
+        position: relative;
+    }
+
+    .contimghover {
+        display: none;
+    }
+
+    .cont_txt {
+        margin-top: 5%;
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .cont_txt p {
+        display: none;
+    }
+
+    #ban {
+        height: 300px;
+    }
+
+    .ban_btn {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        color: #fff;
+        font-size: 3vmin;
+        top: 0%;
+        left: 0;
+        transform: none;
+        text-align: right;
+        line-height: 550px;
+        padding-right: 5%;
+    }
+
+    .ban_btn:hover {
+        background: transparent;
+    }
+
+    #flowTxt {
+        text-align: left;
+        animation: none;
+        font-size: 9vw;
+        left: 25px;
+    }
+
+    .flow:last-child {
+        display: none;
+    }
+
+    .shop_img {
+        height: 200px;
+        margin-top: 5%;
+    }
+
+    .shop_btn {
+        display: none;
+    }
+
+    .br {
+        display: block;
+    }
+
+    .gls_list {
+        padding-bottom: 5%;
+    }
+
+    .gls_list img {
+        opacity: 0;
+    }
+
+    .gls_list h5 {
+        font-size: 3vmin;
+    }
+
+    .gls_list h6 {
+        display: none;
+    }
+}
+
+/* 미디어쿼리 500 */
