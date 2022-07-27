@@ -22,21 +22,6 @@ $(function (e) { /////// jQB ///////////////////////
         $(".gnb_list").toggleClass("on");
     })
 
-    // 원 날리기~
-    var numberOfDivs = 80;
-    // add x number of divs to page.
-    for (var i = 0; i < numberOfDivs; i++) {
-        var g = Math.floor(Math.random() * 5);
-        var c = Math.floor(Math.random() * 5);
-        //Create div with class c0/c3 (color) and g0/g4 (size)
-        var p = $('<div/>').addClass('c' + c).addClass('g' + g).addClass('parti');
-        //Add object to body
-        $('#main').append(p);
-    } //////// for /////////////
-    $(".parti").movingBubble({
-        addCss: false
-    });
-
     // 전화번호 복사
     $(".phone").click(function () {
         copyToClipboard('010-4073-0227');
